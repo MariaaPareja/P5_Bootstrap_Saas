@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte - Esculturas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Estilos Personalizados -->
+    <style>
+        /* Estilo del encabezado con imagen de fondo */
+        header {
+            background-image: url('https://i0.wp.com/culturacolectiva.com/wp-content/uploads/images/65H2AJXUM5FZVJW5SVSEC6VSYE.jpg?ssl=1');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        /* Imagen de perfil redonda */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        /* Estilo de las tarjetas del portafolio */
+        .portfolio-item {
+            margin-bottom: 30px;
+        }
+        /* Pie de contacto */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        /* Enlaces a redes sociales */
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>Galería de Arte - Esculturas</h1>
+            <p>Explora una colección única de esculturas creadas por artistas de renombre.</p>
+        </div>
+    </header>
+
+    <!-- Sección "Acerca de mí" -->
+    <section id="about" class="my-5">
+        <div class="container text-center">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Foto de perfil" class="profile-img mb-3">
+            <h2>Sobre el Artista</h2>
+            <p>Con más de 10 años de experiencia en la creación de esculturas, mi trabajo se centra en capturar la esencia de la naturaleza a través del arte tridimensional.</p>
+            <h4 class="mt-4">Materiales Utilizados</h4>
+            <ul class="list-inline">
+                <li class="list-inline-item badge bg-primary">Bronce</li>
+                <li class="list-inline-item badge bg-secondary">Mármol</li>
+                <li class="list-inline-item badge bg-success">Madera</li>
+                <li class="list-inline-item badge bg-danger">Arcilla</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección "Portafolio" (Galería de Esculturas) -->
+    <section id="portfolio" class="my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Galería de Esculturas</h2>
+            <div class="row">
+                <!-- Escultura 1 -->
+                <div class="col-md-4 portfolio-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Escultura 1: "Estatua de la Libertad"</h5>
+                            <p class="card-text">Representa la libertad y la justicia, ubicada en Nueva York.</p>
+                            <a href="https://cubaxdentro.wordpress.com/wp-content/uploads/2013/02/estatua-de-la-libertad.png" class="btn btn-primary" target="_blank">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Escultura 2 -->
+                <div class="col-md-4 portfolio-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Escultura 2: "Pensador de Rodin"</h5>
+                            <p class="card-text">Una de las obras más icónicas de Auguste Rodin, simboliza la reflexión y el pensamiento profundo.</p>
+                            <a href="https://example.com/pensador-de-rodin" class="btn btn-primary" target="_blank">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Escultura 3 -->
+                <div class="col-md-4 portfolio-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Escultura 3: "David de Miguel Ángel"</h5>
+                            <p class="card-text">Una obra maestra del Renacimiento que representa al héroe bíblico David antes de su batalla con Goliat.</p>
+                            <a href="https://example.com/david-miguel-angel" class="btn btn-primary" target="_blank">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Contacto" -->
+    <section id="contact" class="my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center social-icons mt-4">
+                <a href="#" class="btn btn-outline-light"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="btn btn-outline-light"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="btn btn-outline-light"><i class="bi bi-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Galería de Arte. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
