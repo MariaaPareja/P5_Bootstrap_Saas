@@ -1,0 +1,57 @@
+//Actividada 2.2
+//colores, fuentes, tamaños y otros estilos comunes
+$myColor: brown; //creamos una variable color
+$myFuente: Helvetica, sans-serif; //creamos un variable fuente
+$myTamano: 18px; // creamos una variable tamaño
+
+body{
+    font-family: $myFuente;
+    font-size: $myTamano;
+    color: $myColor;
+}
+
+//Actividad 2.3
+//Mixins: Crear mixins para aplicar estilos complejos o repetitivos
+//a múltiples elementos, facilitando la reutilización de código.
+
+@mixin bordered($color, $width){ //en este mixin se ingresa dos variables
+    border: $width solid $color;  //aca se procesa
+}
+.myArticle{
+    @include bordered(blue, 1px); //para llamar al mixin con include
+}
+.myNotes{
+    @include bordered(red, 2px);
+}
+
+//Actividad 2.4
+//Funciones: Utilizar funciones para realizar cálculos y 
+//transformaciones en el CSS, como convertir unidades o manipular colores.
+
+@function porcentaje($porcentaje, $total){ //funcion de porcentaje
+    @return $porcentaje, $total;
+}
+
+@function suma($variable1, $variable2){ //funcion de suma
+    @return $variable1 + $variable2;
+}
+
+//Actividad 2.5
+//Anidamiento: Organizar el código CSS de manera más
+//intuitiva mediante el anidamiento de selectores y propiedades.
+
+nav { //se ordena jeracquicamente
+    ul { //se especifica uno por uno
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+} 

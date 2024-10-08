@@ -1,0 +1,55 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-family: 'Arial', sans-serif;
+$font-size-base: 16px;
+$spacing-base: 1rem;
+
+// Mixins
+@mixin rounded($radius) {
+  border-radius: $radius;
+}
+
+@mixin box-shadow($color, $size) {
+  box-shadow: 0 0 $size $color;
+}
+
+@mixin transition($property, $duration) {
+  transition: $property $duration;
+}
+/*
+// Funciones
+@function darken-color($color, $amount) {
+  @return darken($color, $amount);
+}
+
+@function lighten-color($color, $amount) {
+  @return lighten($color, $amount);
+}
+*/
+// Estilos Globales
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  margin: 0;
+  padding: $spacing-base;
+}
+
+// Anidamiento
+.navbar {
+  background-color: $primary-color;
+  padding: $spacing-base;
+
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+    padding: $spacing-base;
+    
+    @include transition(color, 0.3s);
+
+    &:hover {
+      color: darken-color($secondary-color, 10%);
+      @include box-shadow(rgba(0, 0, 0, 0.3), 5px);
+    }
+  }
+}

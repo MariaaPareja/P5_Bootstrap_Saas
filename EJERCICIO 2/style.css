@@ -1,0 +1,33 @@
+/*
+// Funciones
+@function darken-color($color, $amount) {
+  @return darken($color, $amount);
+}
+
+@function lighten-color($color, $amount) {
+  @return lighten($color, $amount);
+}
+*/
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 1rem;
+}
+
+.navbar {
+  background-color: #3498db;
+  padding: 1rem;
+}
+.navbar a {
+  color: #2ecc71;
+  text-decoration: none;
+  padding: 1rem;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: darken-color(#2ecc71, 10%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=style.css.map */

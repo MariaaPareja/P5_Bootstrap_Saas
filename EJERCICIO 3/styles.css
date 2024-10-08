@@ -1,0 +1,38 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 1rem;
+}
+
+.navbar {
+  transition: background-color 0.3s;
+}
+.navbar:hover {
+  background-color: #5bc0de;
+}
+
+.btn {
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+}
+
+.carousel-inner img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.card {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+}
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.table th,
+.table td {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
